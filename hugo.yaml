@@ -1,0 +1,193 @@
+baseURL: "https://chilicki.com/"
+title: Chilicki Radoslaw
+languageCode: en-us
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: false
+
+params:
+  env: dev # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Chilicki Radoslaw
+  description: "Business Intelligence, Data Analyst, Power BI, Salesforce, SFDC, Salesforce Administrator, Salesforce Developer, Business Analyst, Architect"
+  keywords: ["Radoslaw Chilicki, Radek Chilicki, Business Intelligence, Data Analyst, Power BI, Salesforce, SFDC, Salesforce Administrator, Salesforce Developer, Business Analyst, Architect"]
+  author: "Radoslaw Chilicki"
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    #icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Chilicki Radoslaw
+    #subtitle: +48 691 166 566    
+    subtitle: ...looking for opportunities...
+    imageUrl: "images/Chilicki.Radoslaw.jpg"
+    imageWidth: 240
+    imageHeight: 240
+    imageTitle: Chilicki Radoslaw
+    buttons:
+      - name: Posts
+        url: posts
+      #- name: Tags
+      #  url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: email
+      url: "mailto:radoslaw.chilicki@gmail.com"
+    - name: linkedin
+      url: "https://linkedin.com/in/chilicki"
+#    - name: x
+#      url: "https://x.com/rchilicki"
+    #- name: stackoverflow
+    #  url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/chilicki"
+    #- name: gitlab
+#      url: "https://gitlab.com/chilicki"  
+
+#    - name: facebook
+#      url: "https://facebook.com/chilicki.radoslaw"      
+#    - name: mobile
+#      url: "+48 691 166 566"
+#    - name: whatsapp
+#      url: "+48 691 166 566"
+#    - name: trailblazer
+#      url: "https://trailblazer.me/id/chilicki"
+
+
+
+    - name: url
+      url: "http://chilicki.pl/"
+    - name: website
+      url: "http://chilicki.com/"
+    - name: telegram
+      url: "https://t.me/chilicki"
+    - name: phone
+      url: "tel:+48 691 166 566"      
+    
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://gitlab.io/chilicki/chilicki.pl/"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+#  main:
+#    - identifier: post
+#      name: Posts
+#      url: /posts/
+#      weight: 10
+
+    #- identifier: categories
+    #  name: categories
+    #  url: /categories/
+    #  weight: 10
+    #- identifier: tags
+    #  name: tags
+    #  url: /tags/
+    #  weight: 20
+    #- identifier: example
+    #  name: example.org
+    #  url: https://example.org
+    #  weight: 30
+
+#    - identifier: archives
+#      name: Archives
+#      url: /archives/
+#      weight: 50
+
+#    - identifier: search
+#      name: Search
+#      url: /search/
+#      weight: 60
+
+#    - identifier: about
+#      name: About
+#      url: /about/
+#      weight: 100
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
+
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
