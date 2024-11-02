@@ -1,7 +1,7 @@
 baseURL: "https://chilicki.com/"
 title: Chilicki Radoslaw
 languageCode: en-us
-paginate: 5
+
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -14,6 +14,11 @@ googleAnalytics: UA-123-45
 minify:
   disableXML: true
   minifyOutput: false
+
+pagination:
+  disableAliases: false
+  pagerSize: 10
+  path: page
 
 params:
   env: dev # to enable google analytics, opengraph, twitter-cards and schema.
@@ -39,6 +44,8 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+
+  social: true
 
 
 
